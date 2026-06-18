@@ -15,7 +15,6 @@ slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
   - name: "#opentelemetry"
     link: "https://cloud-native.slack.com/messages/opentelemetry"
     primary: true
-  - name: "#cncf-tag-observability---technical-advisory-group"
   - name: "#opentelemetry-new-contributors"
   - name: "#project-proposal"
   - name: "#technical-committee"
@@ -23,8 +22,6 @@ slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
   - name: "#otel-localization-ro"
   - name: "#implementation-sigs"
   - name: "#otel-collector-dev"
-  - name: "#dont-change-someone-elses-notice-without-their-permission"
-  - name: "#why-not-list-every-copyright-holder"
   - name: "#otel-opamp"
   - name: "#otel-arrow"
   - name: "#otel-weaver"
