@@ -68,8 +68,8 @@ legal:
   license:
     path: "https://github.com/open-telemetry/opentelemetry.io/blob/main/LICENSE"
   identity_type:
+    has_cla: true
     has_dco: true
-    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
