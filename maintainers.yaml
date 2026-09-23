@@ -9,6 +9,169 @@ maintainers:
     teams:
       - name: "project-maintainers"
         members:
+          - aabmass
+          - aalexand
+          - adrielp
+          - alanwest
+          - albertlockett
+          - AlexanderWert
+          - alolita
+          - amy-super
+          - AndrejKiri
+          - andrzej-stencel
+          - andykellr
+          - ArielDemarco
+          - arminru
+          - atoulme
+          - austinlparker
+          - avillela
+          - basti1302
+          - bidetofevil
+          - bjandras
+          - bobstrecansky
+          - bogdandrutu
+          - braydonk
+          - breedx-splk
+          - brettmc
+          - bryannaegele
+          - bryce-b
+          - carlosalberto
+          - chalin
+          - ChrisLightfootWild
+          - christos68k
+          - ChrsMark
+          - cijothomas
+          - codeboten
+          - cyrille-leclerc
+          - damemi
+          - danielgblanco
+          - darccio
+          - dashpole
+          - david-luna
+          - dazuma
+          - dbarker
+          - didiViking
+          - dmathieu
+          - dmitryax
+          - douglascamata
+          - drewrelmas
+          - dyladan
+          - edeNFed
+          - edmocosta
+          - emdneto
+          - esigo
+          - evan-bradley
+          - EzzioMoreira
+          - fabled
+          - fbogsany
+          - felixge
+          - florianl
+          - fractalwrench
+          - frzifus
+          - grcevski
+          - gshriver
+          - herin049
+          - immavalls
+          - inge4pres
+          - intuibase
+          - jack-berg
+          - JakeDern
+          - JamieDanielson
+          - jaronoff97
+          - jaydeluca
+          - jerbly
+          - jhalliday
+          - jkwatson
+          - jmacd
+          - jmw51798
+          - joaopgrassi
+          - joaquin-diaz
+          - johannaojeling
+          - jpkrohling
+          - jsuereth
+          - julianocosta89
+          - kakkoyun
+          - kamphaus
+          - katzchang
+          - kaylareopelle
+          - Kielek
+          - kmos
+          - kohbis
+          - lalitb
+          - laurit
+          - legendecas
+          - LikeTheSalad
+          - lmolkova
+          - lquerel
+          - lzchen
+          - marcalff
+          - mariomac
+          - martincostello
+          - martinkuba
+          - maryliag
+          - michaelbushe
+          - MikeGoldsmith
+          - mmanciop
+          - mmat11
+          - MovieStoreGuy
+          - mowies
+          - MrAlias
+          - Msksgm
+          - mtwo
+          - mwear
+          - mx-psi
+          - nachoBonafonte
+          - NameHaibinZhang
+          - NimrodAvni78
+          - nrcventura
+          - overbalance
+          - pavolloffay
+          - pdelewski
+          - pellared
+          - pichlermarc
+          - ps48
+          - rafaelroquetto
+          - rajkumar-rangaraj
+          - ralf0131
+          - reese-lee
+          - reyang
+          - robbkidd
+          - robert-northmind
+          - robertlaurin
+          - RonFed
+          - rrschulze
+          - SergeyKleyman
+          - serkan-ozal
+          - sjs994
+          - songy23
+          - svrnm
+          - swiatekm
+          - tedsuo
+          - ThomsonTan
+          - tiffany76
+          - tigrannajaryan
+          - TommyCpp
+          - trask
+          - trentm
+          - tsloughter
+          - txabman42
+          - tylerbenson
+          - TylerHelmuth
+          - utpilla
+          - vitorvasc
+          - wolfgangcodes
+          - wpessers
+          - x1unix
+          - xrmx
+          - XSAM
+          - xuan-cao-swi
+          - y1yang0
+          - ymotongpoo
+          - yonch
+          - yordis
+          - zacharycmontoya
+      - name: "servicedesk" # This team is used to manage the OpenTelemetry Service Desk. People from GC and TC are part of this team.
+        members:
           - alolita
           - austinlparker
           - jpkrohling
@@ -19,12 +182,12 @@ maintainers:
           - trask
           - maryliag
           - arminru
-          - bogdandrutu
           - carlosalberto
+          - codeboten
           - dashpole
           - jack-berg
-          - jsuereth
           - jmacd
           - lmolkova
+          - pellared
           - reyang
           - tigrannajaryan
