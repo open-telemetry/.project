@@ -1,0 +1,55 @@
+name: Sync Maintainers Roster
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check ruamel.yaml
+
+      - name: Fetch upstream members.yaml
+        run: |
+          curl -fsSL \
+            https://raw.githubusercontent.com/open-telemetry/opentelemetry.io/main/data/community/members.yaml \
+            -o /tmp/members.yaml
+
+      - name: Update maintainers.yaml
+        run: python .github/scripts/sync-maintainers.py /tmp/members.yaml maintainers.yaml
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          branch: automated/sync-maintainers
+          delete-branch: true
+          commit-message: 'chore: sync maintainers roster from upstream'
+          title: 'chore: sync maintainers roster from upstream'
+          body: |
+            Automated update of the maintainers roster from
+            https://github.com/open-telemetry/opentelemetry.io/blob/main/data/community/members.yaml
+
+            Rules:
+            - `project-maintainers` = `governance-committee` ∪ `technical-committee` ∪ `maintainers`
+            - `servicedesk` = `governance-committee` ∪ `technical-committee`
+
+            Rosters are sorted case-insensitively.
