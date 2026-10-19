@@ -47,13 +47,16 @@ jobs:
         with:
           client-id: ${{ vars.OTELBOT_CLIENT_ID }}
           private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
+          permission-contents: write
           permission-pull-requests: write
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
+          # Use the OTELBOT app token for both the PR API call and branch pushes.
+          # Pushes with the default GITHUB_TOKEN don't trigger pull_request.synchronize
+          # workflows, which would skip validate.yaml on PR updates.
           token: ${{ steps.otelbot-token.outputs.token }}
-          branch-token: ${{ secrets.GITHUB_TOKEN }}
           branch: automated/sync-maintainers
           delete-branch: true
           commit-message: 'chore: sync maintainers roster from upstream'
