@@ -15,7 +15,6 @@ maintainers:
           - alanwest
           - albertlockett
           - AlexanderWert
-          - alolita
           - amazingakai
           - amy-super
           - AndrejKiri
@@ -119,7 +118,6 @@ maintainers:
           - mowies
           - MrAlias
           - Msksgm
-          - mtwo
           - mwear
           - mx-psi
           - nachoBonafonte
@@ -175,18 +173,18 @@ maintainers:
           - zacharycmontoya
       - name: "servicedesk" # This team is used to manage the OpenTelemetry Service Desk. People from GC and TC are part of this team.
         members:
-          - alolita
           - arminru
           - austinlparker
           - carlosalberto
           - codeboten
+          - danielgblanco
           - dashpole
           - jack-berg
           - jmacd
           - jpkrohling
+          - jsuereth
           - lmolkova
           - maryliag
-          - mtwo
           - mx-psi
           - pellared
           - reyang
