@@ -1,8 +1,6 @@
 # .project metadata for OpenTelemetry
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Set identity_type under legal (has_dco, has_cla)
-# TODO: Add adopters list (ADOPTERS.md)
 # TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
@@ -10,30 +8,142 @@ slug: "opentelemetry"
 name: "OpenTelemetry"
 description: "High-quality, ubiquitous, and portable telemetry to enable effective observability"
 type: "project"
-project_lead: "alolita" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+project_lead: "open-telemetry/governance-committee"
+slack_channels: # SIG channels copied from https://github.com/open-telemetry/community/blob/main/workstreams.yml
   - name: "#opentelemetry"
     link: "https://cloud-native.slack.com/messages/opentelemetry"
     primary: true
-  - name: "#opentelemetry-new-contributors"
-  - name: "#project-proposal"
-  - name: "#technical-committee"
-  - name: "#governance-committee"
-  - name: "#otel-localization-ro"
-  - name: "#implementation-sigs"
-  - name: "#otel-collector-dev"
-  - name: "#otel-opamp"
+  - name: "#otel-android"
+    link: "https://cloud-native.slack.com/archives/C05J0T9K27Q"
   - name: "#otel-arrow"
-  - name: "#otel-weaver"
-  - name: "#weaver"
+    link: "https://cloud-native.slack.com/archives/C07S4Q67LTF"
+  - name: "#otel-browser"
+    link: "https://cloud-native.slack.com/archives/C093P0AMP0T"
+  - name: "#otel-cicd"
+    link: "https://cloud-native.slack.com/archives/C0598R66XAP"
+  - name: "#otel-client-side-telemetry"
+    link: "https://cloud-native.slack.com/archives/C0239SYARD2"
+  - name: "#otel-collector"
+    link: "https://cloud-native.slack.com/archives/C01N6P7KR6W"
+  - name: "#otel-comms"
+    link: "https://cloud-native.slack.com/archives/C02UN96HZH6"
+  - name: "#otel-community-demo"
+    link: "https://cloud-native.slack.com/archives/C03B4CWV4DA"
   - name: "#otel-contributor-experience"
+    link: "https://cloud-native.slack.com/archives/C06TMJ2R0SK"
+  - name: "#otel-cpp"
+    link: "https://cloud-native.slack.com/archives/C01N3AT62SJ"
+  - name: "#otel-dart"
+    link: "https://cloud-native.slack.com/archives/C027SBQGLS0"
   - name: "#otel-devex"
-  - name: "#otel-ui-ux"
+    link: "https://cloud-native.slack.com/archives/C01S42U83B2"
+  - name: "#otel-dotnet"
+    link: "https://cloud-native.slack.com/archives/C01N3BC2W7Q"
+  - name: "#otel-dotnet-auto-instr"
+    link: "https://cloud-native.slack.com/archives/C01NR1YLSE7"
+  - name: "#otel-ebpf-instrumentation"
+    link: "https://cloud-native.slack.com/archives/C08P9L4FPKJ"
+  - name: "#otel-entities"
+    link: "https://cloud-native.slack.com/archives/C06QEG97W7L"
+  - name: "#otel-erlang-elixir"
+    link: "https://cloud-native.slack.com/archives/C01N75YMZCN"
+  - name: "#otel-faas"
+    link: "https://cloud-native.slack.com/archives/C04HVBETC9Z"
+  - name: "#otel-genai-instrumentation"
+    link: "https://cloud-native.slack.com/archives/C06KR7ARS3X"
+  - name: "#otel-go"
+    link: "https://cloud-native.slack.com/archives/C01NPAXACKT"
+  - name: "#otel-go-compile-instrumentation"
+    link: "https://cloud-native.slack.com/archives/C088D8GSSSF"
+  - name: "#otel-go-instrumentation"
+    link: "https://cloud-native.slack.com/archives/C03S01YSAS0"
+  - name: "#otel-helm"
+    link: "https://cloud-native.slack.com/archives/C03HVLM8LAH"
+  - name: "#otel-injector"
+    link: "https://cloud-native.slack.com/archives/C09025GKPAL"
+  - name: "#otel-java"
+    link: "https://cloud-native.slack.com/archives/C014L2KCTE3"
+  - name: "#otel-js"
+    link: "https://cloud-native.slack.com/archives/C01NL1GRPQR"
+  - name: "#otel-k8s-semconv-sig"
+    link: "https://cloud-native.slack.com/archives/C07Q1L0FGKX"
+  - name: "#otel-kotlin"
+    link: "https://cloud-native.slack.com/archives/C08NRCD4R4G"
+  - name: "#otel-localization-bn"
+    link: "https://cloud-native.slack.com/archives/C08TBCSAY1F"
+  - name: "#otel-localization-es"
+    link: "https://cloud-native.slack.com/archives/C07PVQVCHA6"
+  - name: "#otel-localization-fr"
+    link: "https://cloud-native.slack.com/archives/C07THD60YLF"
+  - name: "#otel-localization-ja"
+    link: "https://cloud-native.slack.com/archives/C08SGPBN44E"
+  - name: "#otel-localization-pl"
+    link: "https://cloud-native.slack.com/archives/C0ALHN9V7PT"
+  - name: "#otel-localization-ptbr"
+    link: "https://cloud-native.slack.com/archives/C076LET8YSK"
+  - name: "#otel-localization-ro"
+    link: "https://cloud-native.slack.com/archives/C09E9KNNLP4"
+  - name: "#otel-localization-uk"
+    link: "https://cloud-native.slack.com/archives/C097ZNPM3LK"
+  - name: "#otel-localization-zhcn"
+    link: "https://cloud-native.slack.com/archives/C08SSK25Y7L"
+  - name: "#otel-mainframes"
+    link: "https://cloud-native.slack.com/archives/C05PXDFTCPJ"
+  - name: "#otel-network"
+    link: "https://cloud-native.slack.com/archives/C02AB15583A"
+  - name: "#otel-opamp"
+    link: "https://cloud-native.slack.com/archives/C02J58HR58R"
+  - name: "#otel-operator"
+    link: "https://cloud-native.slack.com/archives/C033BJ8BASU"
+  - name: "#otel-packaging"
+    link: "https://cloud-native.slack.com/archives/C0AD17NMBLZ"
+  - name: "#otel-php"
+    link: "https://cloud-native.slack.com/archives/C01NFPCV44V"
+  - name: "#otel-policies"
+    link: "https://cloud-native.slack.com/archives/C0C0VFN9526"
+  - name: "#otel-profiles"
+    link: "https://cloud-native.slack.com/archives/C03J794L0BV"
+  - name: "#otel-prometheus"
+    link: "https://cloud-native.slack.com/archives/C01LSCJBXDZ"
+  - name: "#otel-python"
+    link: "https://cloud-native.slack.com/archives/C01PD4HUVBL"
+  - name: "#otel-ruby"
+    link: "https://cloud-native.slack.com/archives/C01NWKKMKMY"
+  - name: "#otel-rust"
+    link: "https://cloud-native.slack.com/archives/C03GDP0H023"
+  - name: "#otel-sampling"
+    link: "https://cloud-native.slack.com/archives/C027DS6GZD3"
+  - name: "#otel-semantic-conventions"
+    link: "https://cloud-native.slack.com/archives/C041APFBYQP"
+  - name: "#otel-semconv-rpc-stability"
+    link: "https://cloud-native.slack.com/archives/C09D3TRKMED"
+  - name: "#otel-service-and-deployment-semconv-sig"
+    link: "https://cloud-native.slack.com/archives/C09HLNSSJSE"
+  - name: "#otel-sig-end-user"
+    link: "https://cloud-native.slack.com/archives/C01RT3MSWGZ"
+  - name: "#otel-sig-security"
+    link: "https://cloud-native.slack.com/archives/C05A85QC281"
+  - name: "#otel-spec-logs"
+    link: "https://cloud-native.slack.com/archives/C062HUREGUV"
+  - name: "#otel-specification"
+    link: "https://cloud-native.slack.com/archives/C01N7PP1THC"
+  - name: "#otel-swift"
+    link: "https://cloud-native.slack.com/archives/C01NCHR19SB"
+  - name: "#otel-system-metrics"
+    link: "https://cloud-native.slack.com/archives/C05CTFE9U4A"
+  - name: "#otel-weaver"
+    link: "https://cloud-native.slack.com/archives/C0697EXNTL3"
 
 maturity_log:
-  - phase: "graduated"
+  - phase: "sandbox"
     date: "2019-05-07T00:00:00Z"
-    issue: "https://github.com/cncf/toc/issues/2152" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/toc/pull/233"
+  - phase: "incubating"
+    date: "2021-08-26T00:00:00Z"
+    issue: "https://github.com/cncf/toc/pull/619"
+  - phase: "graduated"
+    date: "2026-05-11T00:00:00Z"
+    issue: "https://github.com/cncf/toc/issues/2152"
 
 repositories:
   - "https://github.com/open-telemetry/community"
@@ -42,9 +152,8 @@ website: "https://opentelemetry.io/"
 
 artwork: "https://landscape.cncf.io/logos/open-telemetry.svg"
 
-# TODO: Add ADOPTERS.md if your project tracks adopters
-# adopters:
-#   path: "https://github.com/open-telemetry/opentelemetry.io/blob/main/ADOPTERS.md"
+adopters:
+  path: "https://opentelemetry.io/ecosystem/adopters/"
 
 
 # TODO: Add package manager identifiers if your project is distributed via registries
@@ -60,7 +169,18 @@ security:
 
 governance:
   contributing:
-    path: "https://github.com/open-telemetry/opentelemetry.io/blob/main/CONTRIBUTING.md"
+    path: "https://github.com/open-telemetry/community/blob/main/CONTRIBUTING.md"
+  governance_doc:
+    path: "https://github.com/open-telemetry/community/blob/main/governance-charter.md"
+  contributor_ladder:
+    path: "https://github.com/open-telemetry/community/blob/main/community-membership.md"
+  sub_project_list:
+    path: "https://github.com/open-telemetry/community/blob/main/sigs.md"
+  comms_channels:
+    path: "https://github.com/open-telemetry/community/blob/main/COMMUNICATION.md"
+  maintainer_lifecycle:
+    offboarding_policy:
+      path: "https://github.com/open-telemetry/community/blob/main/move-to-emeritus.md"
   code_of_conduct:
     path: "https://github.com/open-telemetry/.github/blob/main/CODE_OF_CONDUCT.md"
 
@@ -69,9 +189,10 @@ legal:
     path: "https://github.com/open-telemetry/opentelemetry.io/blob/main/LICENSE"
   identity_type:
     has_cla: true
-    has_dco: true
-    dco_url:
-      path: "https://developercertificate.org/"
+    has_dco: false
+    cla_only: true
+    cla_url:
+      path: "https://github.com/open-telemetry/community/blob/main/guides/contributor/CLA.md"
 
 documentation:
   readme:
@@ -81,5 +202,3 @@ landscape:
   category: "Observability and Analysis"
   subcategory: "Observability"
 
-# CLOMonitor Score: 87/100
-# Documentation: 100 | License: 91 | Best Practices: 74 | Security: 76

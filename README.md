@@ -12,6 +12,8 @@ This repository holds the canonical metadata for [OpenTelemetry](https://opentel
 | `CODEOWNERS` | Ensures PRs to this repo require maintainer approval |
 | `.github/workflows/validate.yaml` | CI — validates `project.yaml` and `maintainers.yaml` on every PR |
 | `.github/workflows/update-landscape.yml` | Automatically proposes landscape updates when `project.yaml` changes |
+| `.github/workflows/sync-maintainers.yml` | Daily PR syncing `maintainers.yaml` from [opentelemetry.io `members.yaml`](https://github.com/open-telemetry/opentelemetry.io/blob/main/data/community/members.yaml), which is generated from the GitHub org teams |
+| `.github/workflows/zizmor.yml` | Security scanning of the GitHub Actions workflows |
 
 ## Keeping metadata up to date
 
