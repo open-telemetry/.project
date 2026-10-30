@@ -57,7 +57,7 @@ jobs:
           # Pushes with the default GITHUB_TOKEN don't trigger pull_request.synchronize
           # workflows, which would skip validate.yaml on PR updates.
           token: ${{ steps.otelbot-token.outputs.token }}
-          branch: automated/sync-maintainers
+          branch: otelbot/sync-maintainers
           delete-branch: true
           commit-message: 'chore: sync maintainers roster from upstream'
           title: 'chore: sync maintainers roster from upstream'
