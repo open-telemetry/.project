@@ -177,7 +177,7 @@ governance:
   sub_project_list:
     path: "https://github.com/open-telemetry/community/blob/main/sigs.md"
   comms_channels:
-    path: "https://github.com/open-telemetry/community/blob/main/COMMUNICATION.md"
+    path: "https://github.com/open-telemetry/community/blob/main/README.md#communication"
   maintainer_lifecycle:
     offboarding_policy:
       path: "https://github.com/open-telemetry/community/blob/main/move-to-emeritus.md"
@@ -192,7 +192,7 @@ legal:
     has_dco: false
     cla_only: true
     cla_url:
-      path: "https://github.com/open-telemetry/community/blob/main/guides/contributor/CLA.md"
+      path: "https://github.com/cncf/cla"
 
 documentation:
   readme:
