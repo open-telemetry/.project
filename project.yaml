@@ -150,7 +150,7 @@ repositories:
 
 website: "https://opentelemetry.io/"
 
-artwork: "https://landscape.cncf.io/logos/open-telemetry.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/opentelemetry"
 
 adopters:
   path: "https://opentelemetry.io/ecosystem/adopters/"
